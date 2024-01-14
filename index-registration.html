@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style-registration.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stonology Regisration</title>
+</head>
+<script src="script.js"></script>
+<body>
+<main>
+  <div class="main" id="main">
+  
+  <div class="a">
+    <h1>Registration Form</h1>
+
+  </div>
+  <form id="formContainer">
+    <button disabled="disabled" class="on"><b class="try">Try Stonology</b> <span>and get $20/mo.</span>
+      </button>
+     <div class="form" id="form">
+      <div>
+  <label for="firstname"> First Name </label> <br>
+  <input type="text" id="firstname" maxlength="12" minlength="3" required placeholder="First Name">
+  <p id="error" class="alert">firstname cannot be empty</p>
+ </div>
+ <div>
+  
+  <label for="lastname">Last Name </label>  <br>
+  <input type="text" id="lastname" minlength="3" maxlength="12" required placeholder="Last Name"> <br>
+  <p id="error" class="alert">lastname cannot be empty</p>
+ </div>
+ <div>
+  <label for="email">  Email Address</label> <br>
+ <input type="email" name="email" id="email" placeholder="example@gmail.com" > <br>
+ <p id="error" class="alert" c>Email cannot be empty</p>
+ </div>
+  <div>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" placeholder="........" id="emailInput" required maxlength="15" minlength="4"> <br>
+    <p id="emailError" class="alert">Password cannot be empty</p>
+  </div>
+ 
+  <button class="btn" onclick="next2()" id="sub"> Next</button>
+  <p onclick="next()" style="color: red;">or Login?</p> 
+  <p class="p" id="p"> By clicking the button, you are agreeing to our <b class="terms"> Terms and Services</b></p>
+  </form>
+</div>
+
+</main>
+</body>
+</html>

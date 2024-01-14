@@ -1,0 +1,144 @@
+*
+{
+	font-family: monospace;
+	color: white;
+
+}
+body
+{
+	background: black;
+	margin: 0;
+	padding: 0;
+	scroll-behavior:none;
+	animation: bin 2s ease-in-out;
+}
+main
+{
+
+	height:10vh;
+	position:fixed;
+	margin-top: -90px;
+	animation: tin 5s ease-in-out;
+	margin-top: 50px;
+}
+
+.all-content
+{
+	margin-top: 80px;
+}
+.logo
+{
+	width: 100px;
+	border-radius: 12px;
+}
+
+.text
+{
+	font-family:monospace;
+	color:white;
+	letter-spacing: 3px;
+	animation: rainbowFlash 5.5s linear infinite;
+	margin-left: 250px;
+	margin-top: -40px;
+	margin-bottom: -20px;
+	
+}
+@keyframes rainbowFlash 
+{
+      0%, 100% { color:white;}
+    14% { color: blue; }
+    28% { color: darkred; }
+    42% { color:aqua;}
+    57% { color: darkred; }
+    71% { color: darkblue; }
+    85% { color:transparent;}
+}
+a
+{
+	text-decoration: none;
+	color: white;
+	transition: 3.5s;
+}
+a:hover
+{
+	transition: 3.5s ease-in-out;
+	color: darkblue;
+	cursor: pointer;
+
+}
+li
+{
+	list-style: none;
+}
+.main-link
+{
+	display:flex;
+	gap: 40px;
+	list-style: none;
+	font-family: monospace;
+	margin-left:450px;
+	margin-top: -10px;
+	font-size: 1.5em;
+}
+.link
+{
+	transition: 3s ease-in-out;
+	font-family:monospace;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.main-btn
+{
+   border-radius: 5px;
+   border-color: white;
+   background: transparent;
+   color: white;
+   font-size: 1em;
+   font-family:monospace;
+   border:solid;
+   margin-top: -5px;
+   letter-spacing: 3px;
+   transition: 3.5s ease-in-out;
+   animation: bounce 3s;
+cursor: pointer;
+padding: 10px 20px;
+display: inline-block;   
+}
+@keyframes bounce{
+	0%, 20%, 50%, 80%, 100%{
+		transform:translateY(0) ;
+	}
+	40%{
+		transform: translateY(-20px);
+	}
+	60%{
+		transform: translateY(-10px);
+	}
+}
+
+
+.main-btn:hover
+{
+	transition: 3.5s ease-in-out;
+	color: darkblue;
+	border-color: transparent;
+	cursor: pointer;
+	animation: bounce-hover 4s;
+}
+@keyframes bounce-hover{
+	0%, 20%, 50%, 80%, 100%{
+		transform:translateY(0) ;
+	}
+	40%{
+		transform: translateY(-20px);
+	}
+	60%{
+		transform: translateY(-10px);
+	}
+}
+.stream{
+	margin-top: 100px;
+	height: 300px;
+	width: 250px;
+	gap: 100px;
+}
